@@ -2,7 +2,9 @@ import { StyleSheet, Text, View,Im, Image } from 'react-native'
 import React from 'react'
 import { Ionicons,FontAwesome } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-export default function Card() {
+import data from '../data/Propiedades.json'
+export default function Card({propiedad}) {
+  
   return (
     <>
     <View style={styles.container}>
@@ -13,24 +15,24 @@ export default function Card() {
             />
         </View>
       <View style={styles.Info}>
-        <Text style={styles.tPropiedad}>The Willows</Text>
-        <Text style={styles.tLocacion}>3517 W.Gray St.Utica</Text>
+        <Text style={styles.tPropiedad}>{propiedad.item.Nombre}</Text>
+        <Text style={styles.tLocacion}>{propiedad.item.Info[0].Ubicacion}</Text>
         <View style={{flexDirection:'row' }}>
           <View style={styles.tInfo}>
           <Ionicons name="bed-outline" size={24} color="black" />
-          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>3</Text>
+          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>{propiedad.item.Info[0].Recamara}</Text>
         </View>
         <View style={styles.tInfo}>
           <MaterialCommunityIcons name="shower" size={24} color="black" />
-          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>2</Text>
+          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>{propiedad.item.Info[0].Banios}</Text>
         </View>
         <View style={styles.tInfo}>
           <MaterialCommunityIcons name="shower" size={24} color="black" />
-          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>230 ft</Text>
+          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>{propiedad.item.Info[0].Espacio}</Text>
         </View>
         </View>
         <View style={{flexDirection:'row',marginTop:5}}>
-        <Text style={{color:'black',fontSize:18,fontWeight:'bold',marginRight:'60%'}}>$440/m</Text>
+        <Text style={{color:'black',fontSize:18,fontWeight:'bold',marginRight:'60%'}}>{propiedad.item.Info[0].Precio}</Text>
         <View style={{width:40,height:40,marginBottom:20}}>
             <Ionicons name="heart-circle-sharp" size={40} color="green"/>
         </View>

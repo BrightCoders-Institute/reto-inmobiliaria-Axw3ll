@@ -1,14 +1,14 @@
 {
     "Propiedades":[
         {
-            "Nombre":"The Willows",
+            "Nombre":"The Hills",
             "id":1,
             "Info":[{
                 "Ubicacion":"3517 W.Gray St.Utica",
-                "Recamara":3,
-                "Banios":2,
+                "Recamara":4,
+                "Banios":4,
                 "Espacio":"230 ft",
-                "Precio":"$440/m"
+                "Precio":"$640/m"
             }] 
         },
         {
