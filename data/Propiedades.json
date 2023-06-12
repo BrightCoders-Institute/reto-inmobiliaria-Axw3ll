@@ -1,0 +1,81 @@
+{
+    "Propiedades":[
+        {
+            "Nombre":"The Willows",
+            "id":1,
+            "Info":[{
+                "Ubicacion":"3517 W.Gray St.Utica",
+                "Recamara":3,
+                "Banios":2,
+                "Espacio":"230 ft",
+                "Precio":"$440/m"
+            }] 
+        },
+        {
+            "Nombre":"The Willows",
+            "id":2,
+            "Info":[{
+                "Ubicacion":"3517 W.Gray St.Utica",
+                "Recamara":3,
+                "Banios":2,
+                "Espacio":"230 ft",
+                "Precio":"$440/m"
+            }] 
+        },
+        {
+            "Nombre": "The Cedars",
+            "id": 7,
+            "Info": [{
+                "Ubicacion": "1357 Cedar Court",
+                "Recamara": 2,
+                "Banios": 2,
+                "Espacio": "1200 ft",
+                "Precio": "$400/m"
+            }]
+        },
+        {
+            "Nombre": "The Birch",
+            "id": 6,
+            "Info": [{
+                "Ubicacion": "2468 Birch Road",
+                "Recamara": 1,
+                "Banios": 1,
+                "Espacio": "900 ft",
+                "Precio": "$250/m"
+            }]
+        },
+        {
+            "Nombre": "The Maple",
+            "id": 5,
+            "Info": [{
+                "Ubicacion": "7890 Maple Lane",
+                "Recamara": 3,
+                "Banios": 2,
+                "Espacio": "2000 ft",
+                "Precio": "$500/m"
+            }]
+        },
+        {
+            "Nombre": "The Pines",
+            "id": 4,
+            "Info": [{
+                "Ubicacion": "5678 Pine Avenue",
+                "Recamara": 2,
+                "Banios": 1,
+                "Espacio": "1500 ft",
+                "Precio": "$300/m"
+            }]
+        },
+        {
+            "Nombre": "The Oaks",
+            "id": 3,
+            "Info": [{
+                "Ubicacion": "1234 Oak Street",
+                "Recamara": 4,
+                "Banios": 3,
+                "Espacio": "2800 ft",
+                "Precio": "$650/m"
+            }]
+        }
+    ] 
+}
