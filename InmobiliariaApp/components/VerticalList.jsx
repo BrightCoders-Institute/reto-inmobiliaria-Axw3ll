@@ -7,7 +7,7 @@ export default function VerticalList() {
     <View>
       <SafeAreaView>
         <FlatList
-        style={{marginBottom:15}}
+        style={{width:'100%', marginVertical:10}}
             data={Data.Propiedades}
             renderItem={propiedad=><Card propiedad={propiedad}/>}
         />

@@ -7,7 +7,7 @@
                 "Ubicacion":"3517 W.Gray St.Utica",
                 "Recamara":4,
                 "Banios":4,
-                "Espacio":"230 ft",
+                "Espacio":"230 ft²",
                 "Precio":"$640/m"
             }] 
         },
@@ -18,7 +18,7 @@
                 "Ubicacion":"3517 W.Gray St.Utica",
                 "Recamara":3,
                 "Banios":2,
-                "Espacio":"230 ft",
+                "Espacio":"230 ft²",
                 "Precio":"$440/m"
             }] 
         },
@@ -29,7 +29,7 @@
                 "Ubicacion": "1357 Cedar Court",
                 "Recamara": 2,
                 "Banios": 2,
-                "Espacio": "1200 ft",
+                "Espacio": "1200 ft²",
                 "Precio": "$400/m"
             }]
         },
@@ -40,7 +40,7 @@
                 "Ubicacion": "2468 Birch Road",
                 "Recamara": 1,
                 "Banios": 1,
-                "Espacio": "900 ft",
+                "Espacio": "900 ft²",
                 "Precio": "$250/m"
             }]
         },
@@ -51,7 +51,7 @@
                 "Ubicacion": "7890 Maple Lane",
                 "Recamara": 3,
                 "Banios": 2,
-                "Espacio": "2000 ft",
+                "Espacio": "2000 ft²",
                 "Precio": "$500/m"
             }]
         },
@@ -62,7 +62,7 @@
                 "Ubicacion": "5678 Pine Avenue",
                 "Recamara": 2,
                 "Banios": 1,
-                "Espacio": "1500 ft",
+                "Espacio": "1500 ft²",
                 "Precio": "$300/m"
             }]
         },
@@ -73,7 +73,28 @@
                 "Ubicacion": "1234 Oak Street",
                 "Recamara": 4,
                 "Banios": 3,
-                "Espacio": "2800 ft",
+                "Espacio": "2800 ft²",
+                "Precio": "$650/m"
+            }]
+        },  {
+            "Nombre": "The Pines",
+            "id": 8,
+            "Info": [{
+                "Ubicacion": "5678 Pine Avenue",
+                "Recamara": 2,
+                "Banios": 1,
+                "Espacio": "1500 ft²",
+                "Precio": "$300/m"
+            }]
+        },
+        {
+            "Nombre": "The Oaks",
+            "id": 9,
+            "Info": [{
+                "Ubicacion": "1234 Oak Street",
+                "Recamara": 4,
+                "Banios": 3,
+                "Espacio": "2800 ft²",
                 "Precio": "$650/m"
             }]
         }
