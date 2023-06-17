@@ -3,6 +3,7 @@
         {
             "Nombre":"The Hills",
             "id":1,
+            "star":4.5,
             "Info":[{
                 "Ubicacion":"3517 W.Gray St.Utica",
                 "Recamara":4,
@@ -14,6 +15,7 @@
         {
             "Nombre":"The Willows",
             "id":2,
+            "star":4,
             "Info":[{
                 "Ubicacion":"3517 W.Gray St.Utica",
                 "Recamara":3,
@@ -25,6 +27,7 @@
         {
             "Nombre": "The Cedars",
             "id": 7,
+            "star":3.5,
             "Info": [{
                 "Ubicacion": "1357 Cedar Court",
                 "Recamara": 2,
@@ -36,6 +39,7 @@
         {
             "Nombre": "The Birch",
             "id": 6,
+            "star":5,
             "Info": [{
                 "Ubicacion": "2468 Birch Road",
                 "Recamara": 1,
@@ -47,6 +51,7 @@
         {
             "Nombre": "The Maple",
             "id": 5,
+            "star":2.5,
             "Info": [{
                 "Ubicacion": "7890 Maple Lane",
                 "Recamara": 3,
@@ -58,6 +63,7 @@
         {
             "Nombre": "The Pines",
             "id": 4,
+            "star":3.5,
             "Info": [{
                 "Ubicacion": "5678 Pine Avenue",
                 "Recamara": 2,
@@ -69,6 +75,7 @@
         {
             "Nombre": "The Oaks",
             "id": 3,
+            "star":4.5,
             "Info": [{
                 "Ubicacion": "1234 Oak Street",
                 "Recamara": 4,
@@ -79,6 +86,7 @@
         },  {
             "Nombre": "The Pines",
             "id": 8,
+            "star":5,
             "Info": [{
                 "Ubicacion": "5678 Pine Avenue",
                 "Recamara": 2,
@@ -90,6 +98,7 @@
         {
             "Nombre": "The Oaks",
             "id": 9,
+            "star":2.5,
             "Info": [{
                 "Ubicacion": "1234 Oak Street",
                 "Recamara": 4,
