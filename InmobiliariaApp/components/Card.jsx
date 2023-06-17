@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View,Im, Image, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { Ionicons,FontAwesome,EvilIcons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import data from '../data/Propiedades.json'
+import { MaterialCommunityIcons,AntDesign } from '@expo/vector-icons';
+
 export default function Card({propiedad}) {
   const [like,setLike]=useState('false')
   return (
@@ -13,6 +13,11 @@ export default function Card({propiedad}) {
             style = {styles.img}
             source = {{uri:'https://assets.easybroker.com/property_images/3563089/57959475/EB-MR3089.jpg?version=1676677338'}}
             />
+
+            <View style={styles.startContainer}>
+              <AntDesign name="star" size={12} color="#EEBA00" />
+              <Text style={{color:'#7A6229',fontSize:12,fontWeight:'bold'}}>{propiedad.item.star}</Text>
+            </View>
         </View>
       <View style={styles.Info}>
         <Text style={styles.tPropiedad}>{propiedad.item.Nombre}</Text>
@@ -23,21 +28,21 @@ export default function Card({propiedad}) {
         <View style={{flexDirection:'row' }}>
           <View style={styles.tInfo}>
             <Ionicons name="bed-outline" size={24} color="black" />
-            <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>{propiedad.item.Info[0].Recamara}</Text>
+            <Text style={styles.textoInfo}>{propiedad.item.Info[0].Recamara}</Text>
           </View>
           <View style={styles.tInfo}>
             <MaterialCommunityIcons name="shower" size={24} color="black" />
-            <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>{propiedad.item.Info[0].Banios}</Text>
+            <Text style={styles.textoInfo}>{propiedad.item.Info[0].Banios}</Text>
           </View>
         <View style={styles.tInfo}>
-          <MaterialCommunityIcons name="shower" size={24} color="black" />
-          <Text style={{color:'black',paddingTop:4,paddingLeft:2,fontWeight:'bold'}}>{propiedad.item.Info[0].Espacio}</Text>
+          <AntDesign name="codepen" size={24} color="black" />
+          <Text style={styles.textoInfo}>{propiedad.item.Info[0].Espacio}</Text>
         </View>
         </View>
         <View style={{flexDirection:'row',marginTop:5}}>
-          <Text style={{color:'black',fontSize:18,fontWeight:'bold',marginRight:'60%'}}>{propiedad.item.Info[0].Precio}</Text>
+          <Text style={styles.precio}>{propiedad.item.Info[0].Precio}</Text>
         <TouchableOpacity 
-          style={{width:30,height:30,backgroundColor:'green',borderRadius:25,alignItems:'center'}}
+          style={styles.btnLike}
           onPress={()=>setLike(!like)}>
            <FontAwesome name={like?'heart-o':'heart'} size={20} color={'white'} margin={'17%'}/>
         </TouchableOpacity>
@@ -54,10 +59,15 @@ const styles = StyleSheet.create({
 container:{
    width:375,
    height:125,
-  backgroundColor:'#F5FDFF',
+    backgroundColor:'#F5FDFF',
    flexDirection:'row',
    borderRadius:5,
-   marginBottom:5
+   marginBottom:10,
+   shadowColor:'black',
+  shadowRadius:4  ,
+  shadowOffset:{width:40,height:40},
+  shadowOpacity:5,
+  elevation: 5, // Solo para Android
 },
 imgContainer:{
     width:'26%',
@@ -95,4 +105,40 @@ tInfo:{
   marginRight:50
   
 },
+startContainer:{
+  backgroundColor:'#FBEDB7',
+  flexDirection:'row',
+  width:'50%',
+  paddingHorizontal:6,
+  borderRadius:10,
+  position:'relative',
+  left:'15%',bottom:'27%',
+  justifyContent:'space-around',
+  alignItems:'center',
+  paddingVertical:3,
+  shadowColor:'black',
+  shadowRadius:4  ,
+  shadowOffset:{width:40,height:40},
+  shadowOpacity:5,
+  elevation: 5, // Solo para Android
+},
+textoInfo:{
+  color:'black',
+  paddingTop:4,
+  paddingLeft:2,
+  fontWeight:'bold'
+},
+precio:{
+  color:'black',
+  fontSize:18,
+  fontWeight:'bold',
+  marginRight:'60%'
+},
+btnLike:{
+  width:30,
+  height:30,
+  backgroundColor:'green',
+  borderRadius:25,
+  alignItems:'center'
+}
 })
