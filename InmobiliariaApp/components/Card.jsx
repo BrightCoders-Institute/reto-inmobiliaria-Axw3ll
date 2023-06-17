@@ -15,7 +15,7 @@ export default function Card({propiedad}) {
             />
 
             <View style={styles.startContainer}>
-              <AntDesign name="star" size={12} color="#EEBA00" />
+              <AntDesign name="star" size={12} color="#EEBA00" testID="star-icon"/>
               <Text style={{color:'#7A6229',fontSize:12,fontWeight:'bold'}}>{propiedad.item.star}</Text>
             </View>
         </View>
@@ -43,7 +43,8 @@ export default function Card({propiedad}) {
           <Text style={styles.precio}>{propiedad.item.Info[0].Precio}</Text>
         <TouchableOpacity 
           style={styles.btnLike}
-          onPress={()=>setLike(!like)}>
+          onPress={()=>setLike(!like)}
+          testID="like-button">
            <FontAwesome name={like?'heart-o':'heart'} size={20} color={'white'} margin={'17%'}/>
         </TouchableOpacity>
         </View>
